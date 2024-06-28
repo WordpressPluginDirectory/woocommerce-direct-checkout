@@ -4,17 +4,17 @@
  * Plugin Name:             WooCommerce Direct Checkout
  * Plugin URI:              https://quadlayers.com/products/woocommerce-direct-checkout/
  * Description:             Simplifies the checkout process to improve your sales rate.
- * Version:                 3.3.3
+ * Version:                 3.3.5
  * Text Domain:             woocommerce-direct-checkout
  * Author:                  QuadLayers
  * Author URI:              https://quadlayers.com
  * License:                 GPLv3
  * Domain Path:             /languages
- * Request at least:        4.7.0
+ * Request at least:        4.7
  * Tested up to:            6.5
  * Requires PHP:            5.6
  * WC requires at least:    4.0
- * WC tested up to:         8.2
+ * WC tested up to:         9.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Definition globals varibles
  */
 define( 'QLWCDC_PLUGIN_NAME', 'WooCommerce Direct Checkout' );
-define( 'QLWCDC_PLUGIN_VERSION', '3.3.3' );
+define( 'QLWCDC_PLUGIN_VERSION', '3.3.5' );
 define( 'QLWCDC_PLUGIN_FILE', __FILE__ );
 define( 'QLWCDC_PLUGIN_DIR', __DIR__ . DIRECTORY_SEPARATOR );
 define( 'QLWCDC_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
@@ -82,6 +82,18 @@ add_action(
 	function() {
 		if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
 			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+		}
+	}
+);
+
+/**
+ * Declare incompatibility with WooCommerce Cart & Checkout Blocks.
+ */
+add_action(
+	'before_woocommerce_init',
+	function() {
+		if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'cart_checkout_blocks', __FILE__, false );
 		}
 	}
 );
