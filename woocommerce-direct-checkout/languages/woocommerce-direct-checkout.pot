@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Direct Checkout 3.4.0\n"
+"Project-Id-Version: WooCommerce Direct Checkout 3.4.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woocommerce-direct-checkout\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-10-10T13:34:38+00:00\n"
+"POT-Creation-Date: 2024-11-28T18:00:45+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: woocommerce-direct-checkout\n"
@@ -513,7 +513,7 @@ msgstr ""
 #: lib/controller/class-products.php:172
 #: lib/controller/class-products.php:388
 #: lib/view/backend/pages/premium.php:28
-#: vendor_packages/wp-notice-plugin-promote.php:75
+#: vendor_packages/wp-notice-plugin-promote.php:72
 msgid "Purchase Now"
 msgstr ""
 
@@ -624,6 +624,7 @@ msgid "The Quick purchase button allows you to include a direct button in the si
 msgstr ""
 
 #: vendor_packages/wp-notice-plugin-promote.php:20
+#: vendor_packages/wp-notice-plugin-promote.php:83
 msgid "Today we have a special gift for you. Use the coupon code %1$s within the next 48 hours to receive a %2$s discount on the premium version of the %3$s plugin."
 msgstr ""
 
@@ -631,38 +632,24 @@ msgstr ""
 msgid "WooCommerce Checkout Manager allows you to add custom fields to the checkout page, related to billing, Shipping or Additional fields sections."
 msgstr ""
 
-#: vendor_packages/wp-notice-plugin-promote.php:43
+#: vendor_packages/wp-notice-plugin-promote.php:45
 msgid "Perfect WooCommerce Brands the perfect tool to improve customer experience on your site. It allows you to highlight product brands and organize them in lists, dropdowns, thumbnails, and as a widget."
 msgstr ""
 
-#: vendor_packages/wp-notice-plugin-promote.php:54
-msgid "Hello! Thank you for choosing the %s plugin!"
+#: vendor_packages/wp-notice-plugin-promote.php:57
+msgid "Hello! %2$s We've spent countless hours developing this free plugin for you and would really appreciate it if you could drop us a quick rating. Your feedback is extremely valuable to us. %3$s It helps us to get better. Thanks for using %1$s."
 msgstr ""
 
-#: vendor_packages/wp-notice-plugin-promote.php:60
-msgid "Could you please give it a 5-star rating on WordPress? Your feedback boosts our motivation, helps us promote, and continues to improve this product. Your support matters!"
-msgstr ""
-
-#: vendor_packages/wp-notice-plugin-promote.php:62
-msgid "Yes, of course!"
-msgstr ""
-
-#: vendor_packages/wp-notice-plugin-promote.php:67
+#: vendor_packages/wp-notice-plugin-promote.php:64
 msgid "Report a bug"
 msgstr ""
 
-#: vendor_packages/wp-notice-plugin-promote.php:81
+#: vendor_packages/wp-notice-plugin-promote.php:78
 msgid "Hello! We have a special gift!"
 msgstr ""
 
-#: vendor_packages/wp-notice-plugin-promote.php:87
-#: vendor_packages/wp-notice-plugin-promote.php:105
-#: vendor_packages/wp-notice-plugin-promote.php:123
-msgid "More info!"
-msgstr ""
-
-#: vendor_packages/wp-notice-plugin-promote.php:97
-#: vendor_packages/wp-notice-plugin-promote.php:115
+#: vendor_packages/wp-notice-plugin-promote.php:98
+#: vendor_packages/wp-notice-plugin-promote.php:112
 msgid "Hello! We want to invite you to try our %s plugin!"
 msgstr ""
 
